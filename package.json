@@ -1,0 +1,30 @@
+{
+  "name": "in-person",
+  "version": "0.0.0",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "server.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anurag-Shukla/InPersonNode"
+  },
+  "private": true,
+  "dependencies": {
+    "ejs": "~1.0.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  },
+  "license": "MIT"
+}
