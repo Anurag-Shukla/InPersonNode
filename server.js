@@ -8,7 +8,7 @@ var app = express();
 const https = require('https').Server(options, app);
 const io = require('socket.io')(https, { 'Access-Control-Allow-Origin': '**'});
 
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8443;
 
 
 app.use(express.static(__dirname + '/dist/InPerson'));
