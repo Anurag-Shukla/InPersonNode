@@ -1,6 +1,5 @@
 const express = require('express');
 const fs  = require('fs');
-
 const options = {
   key: fs.readFileSync("./ssl-certs/key.pem"),
   cert: fs.readFileSync("./ssl-certs/cert.pem")
@@ -10,9 +9,6 @@ var app = express();
 
 const https = require('https').Server(options, app);
 const io = require('socket.io')(https, { 'Access-Control-Allow-Origin': '**'});
-
-
-// app.use(express.static(__dirname + '/dist/InPerson'));
 
 app.get('/', function(req, res){
   res.send("I am up and running");
